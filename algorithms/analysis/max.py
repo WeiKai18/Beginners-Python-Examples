@@ -9,8 +9,8 @@
 # each time a number(say k) greater than, previous 
 # consideration(say p) is found, replace previous 
 # consideration(p) with that greater number(k)
-# By this way, 
-# 	At last we get the maximum number from data
+# through this process, 
+# 	we get the largest integer.
 
 def max_(seq):
 	max_n = seq[0]
@@ -24,13 +24,13 @@ def max_(seq):
 # Add your tests too!
 tests = [[9017289, 782367, 736812903, 9367821, 71256716278, 676215, 2398, 0, 1], 
 		 [19208, 9239, 4376, 738, 78, 51, 5, 6, 12, 78, 123, 65765, 1999999999],
-		 [1, 2, 4, 7, 9]]
+		 [1, 2, 4, 7, 9], [1337, 1217, 1127, 0, 11, 1000]]
 
-# checking our functions results
+# checking our function's results
 # with python's built-in max() function
 for test_i in range(len(tests)):
 	m = max_(tests[test_i])
 	if m == max(tests[test_i]):
 		print("Max number in array({}) -> ".format(test_i + 1) + str(m))
 	else:
-		print("Oops! Someting went wrong!") 
+		print("Oops! Something went wrong, please restart the script!") 
